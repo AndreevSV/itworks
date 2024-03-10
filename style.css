@@ -1,0 +1,133 @@
+.nav-container{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.nav-container .left-container ul{
+    display: flex;
+    list-style-type: none;
+    margin: auto;
+}
+
+.nav-container .left-container ul li{
+    margin-right: 20px;
+}
+
+.nav-container .left-container ul .fa-house{
+    color: deepskyblue;
+}
+
+.nav-container .left-container ul .fa-bell{
+    color: deepskyblue;
+}
+
+.nav-container .left-container ul .fa-message{
+    color: deepskyblue;
+}
+
+.nav-container .center-container .fa-twitter{
+    color: deepskyblue;
+}
+
+.nav-container .right-container ul{
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+    margin: auto;
+}
+
+.nav-container .right-container ul li{
+    margin-right: 20px;
+}
+
+.nav-container .right-container img{
+    height: 22px;
+    border-radius: 50%;
+}
+
+.nav-container .right-container button{
+    background-color: deepskyblue;
+    color: white;
+    padding: 3px 20px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.nav-container .right-container button:hover{
+    background-color: dodgerblue;
+}
+
+
+.middle-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    height: 200px;
+    background-color: deepskyblue;
+}
+
+.text{
+    text-align: center;
+    font-size: larger;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.info-container{
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+.info-container .logo-container{
+    margin-top: -75px;
+    list-style-type: none;
+}
+
+.info-container .logo-container .logo{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+   }
+
+.info-container .table-container{
+    list-style-type: none;
+    z-index: 0;
+}
+
+.info-container .table-container table {
+    border-collapse: collapse;
+    width: auto; 
+}
+
+.info-container .table-container th,
+.info-container .table-container td{
+    text-align: center;
+}
+
+.info-container .table-container th:first-child{
+    color: deepskyblue;
+}
+
+.info-container .table-container td:first-child{
+    color: deepskyblue;
+}
+
+.info-container .buttons-container .follow-button{
+    background-color: lightgray;
+    border-color: deepskyblue;
+    font-size: small;
+    margin: 3px;
+    padding: 3px 20px;
+    border-radius: 20px;
+    color: deepskyblue;
+    cursor: pointer;
+}
+
+.info-container .buttons-container .ellipsis-button{
+background-color: transparent;
+border: none;
+}
+
+  
