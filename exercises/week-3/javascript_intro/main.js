@@ -1,17 +1,47 @@
-const numbers = [1,2,3,4,5,6,7,8,9,10];
+/*
+// Exercise 1- Jill & Robert dating
+let p1 = { name: "Jill", age: 45, city: "Haifa" };
+let p2 = { name: "Robert", age: 45, city: "Tel-Aviv" };
 
-numbers.splice(1, 2);
+function dateJillAndRobert(p1, p2) {
+  if (p1.age == p2.age && p1.city == p2.city) {
+    return "Jill wanted to date Robert";
+  } else if (p1.city != p2.city) {
+    return "Jill wanted to date Robert, but couldn’t";
+  } else {
+    return "Jill and Robert live in the same city and have same age";
+  }
+}
 
-console.log(numbers);
+console.log(dateJillAndRobert(p1, p2));
 
-numbers.splice(3, 1, 1);
+// Exercise 2 - Library
+let library = {
+  books: [
+    { title: "War and Peace", author: "L.N.Tolstoy" },
+    { title: "Belaya Bereza", author: "S.Esenin" },
+  ],
+};
 
-console.log(numbers);
+console.log(library);
+*/
 
-numbers.splice(-4);
+// Exercise 3 - Extra Practice
+const reservations = {
+    Bob: { claimed: false },
+    Ted: { claimed: true }
+  };
+  
+  const name = prompt('Please enter the name for your reservation');
 
-console.log(numbers);
+  function checkReservation(reservations, name) {
+    if (reservations[name] && reservations[name].claimed == false) {
+        return alert("Welcome " + name + "!");
+    }  else if (reservations[name] && reservations[name].claimed == true) {
+        return alert(name + " - your reservation already claimd!");
+    } else {
+        return alert(name + " - there is nothing under your name!")
+    }
+  }
 
-numbers.splice(0, 0, 0);
-
-console.log(numbers);
+  checkReservation(reservations, name);
