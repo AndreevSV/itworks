@@ -53,3 +53,22 @@ function isNumberExistInArray(arrayOfIntegers, number){
 }
 
 console.log(isNumberExistInArray(arrayOfIntegers, number));
+
+// Exercise 4
+// Create an object called calculator.
+// It should have two methods: add and subtract
+// Both methods take two parameters, and should return the sum/difference of both numbers.
+// Use this to test your code:
+// const result1 = calculator.add(20, 1)
+// const result2 = calculator.subtract(30, 9)
+// console.log(calculator.add(result1, result2)) //should print 42
+
+const calculator = {
+    add: function add(a, b) {return a + b},
+    subtract: function substract(a, b){return a - b}
+};
+
+const result1 = calculator.add(20, 1);
+const result2 = calculator.subtract(30, 9);
+
+console.log(calculator.add(result1, result2)); //should print 42
