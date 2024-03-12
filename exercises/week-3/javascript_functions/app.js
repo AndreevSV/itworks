@@ -17,3 +17,4 @@ console.log(isEven(11));
 // Write a function that takes in an array of numbers.
 // The function should loop through the numbers and (using the function from Exercise 1) 
 // print out the odd numbers.
+
