@@ -18,3 +18,17 @@ console.log(isEven(11));
 // The function should loop through the numbers and (using the function from Exercise 1) 
 // print out the odd numbers.
 
+const numbers = [1, 3, 6, 9, 22, 18];
+
+function printOddNumbers(numbers){
+    const oddNumbers = [];
+    for(let i = 0; i < numbers.length; i++) {
+        let number = numbers[i];
+        if (number % 2 > 0) {
+            oddNumbers.push(number);
+        }
+    }
+    console.log(oddNumbers);
+}
+
+printOddNumbers(numbers);
