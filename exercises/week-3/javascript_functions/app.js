@@ -32,3 +32,24 @@ function printOddNumbers(numbers){
 }
 
 printOddNumbers(numbers);
+
+// Exercise 3
+// Write a JavaScript function that accepts two parameters: one being an array of integers, and the other being a number. 
+// The function should return true or false depending on whether the number exists in the array.
+// Hint: You should loop through the array, and for each item in the array, check if it equals the number that was passed.
+// checkExists([1, 2, 3], 2) - should return true
+// checkExists([1, 2, 3], 5) - should return false
+
+const arrayOfIntegers = [1, 2, 3];
+const number = 2; // Could change;
+
+function isNumberExistInArray(arrayOfIntegers, number){
+    for(let i = 0; i < arrayOfIntegers.length; i++) {
+        if(number == arrayOfIntegers[i]) {
+            return true;
+        } 
+    }
+    return false;
+}
+
+console.log(isNumberExistInArray(arrayOfIntegers, number));
