@@ -23,3 +23,17 @@ function addPeopleToObject(names, ages) {
 }
 
 addPeopleToObject(names, ages);
+
+//Exercise 2 (Extra Practise)
+// Based off the people array from before, write a loop that prints out "Ashley is 23 years old", "Donovan is 47 years old", etc.
+// Again, consider which loop is most appropriate.
+// Note that this is different from Exercise 1 ;)
+function logPhrases(people) {
+    for (const key in people) {
+        let name = people[key].name;
+        let age = people[key].age;
+        console.log(name + " is " + age + " years old.");
+    }
+}
+
+logPhrases(people);
