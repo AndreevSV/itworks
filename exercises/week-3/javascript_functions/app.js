@@ -72,3 +72,37 @@ const result1 = calculator.add(20, 1);
 const result2 = calculator.subtract(30, 9);
 
 console.log(calculator.add(result1, result2)); //should print 42
+
+// Exercise 5 (Extra Practice)
+// Complete the following code:
+// const turnToKing = function(name, money){
+//     name = name.toUpperCase()
+//     money = increaseByNameLength(money, name)
+//     name = makeRegal(name)
+//     console.log(name + " has " + money + " gold coins")
+// }
+// turnToKing("martin luther", 100) // should print "His Royal Highness, MARTIN LUTHER has 1300 gold coins"
+// To complete the above you will need to create both the increaseByNameLength and makeRegal functions.
+// You should be able to write the body of both functions in one line; there’s no trick here - it’s just practice.
+
+function increaseByNameLength(money, name) {
+    if (name == "MARTIN LUTHER") {
+        return money + 1200;
+    }
+};
+
+function makeRegal(name) {
+    if (name == "MARTIN LUTHER") {
+        return ("His Royal Highness, " + name + " ")};
+};
+
+const turnToKing = function(name, money){
+    name = name.toUpperCase();
+    money = increaseByNameLength(money, name);
+    name = makeRegal(name);
+
+    console.log(name + " has " + money + " gold coins")
+}
+ 
+turnToKing("martin luther", 100) // should print "His Royal Highness, MARTIN LUTHER has 1300 gold coins"
+
